@@ -18,6 +18,9 @@ h1{
 	width: 250px;
 	float: left;
 }
+.skills{
+	font-size: 18px;
+}
 #myNavbar {
 	float: right;
 	padding: 0;
@@ -52,13 +55,14 @@ h1{
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
 	background-color: #f59707;
+	margin-top: 5px;
 	border-radius: 5px;
 	padding: 10px 20px;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-	background-color: #f59707; 
+	/* background-color: #f59707; 
 	border-radius: 5px;
-	padding: 10px 20px;
+	padding: 10px 20px; */
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
 	background-color: #f59707;
@@ -113,7 +117,7 @@ h1{
 }
 
 .img-responsive {
-	max-height: 600px;
+	/* max-height: 600px; */
 	box-shadow: 0px 0px 10px black;
 	margin: 0px auto;
 	padding: 0px;
@@ -165,9 +169,11 @@ h3 {
 }
 h2 {
 	color: #f59707;
-	margin: 50px auto;
+	margin: 20px auto;
 }
-
+.portfoliop{
+	margin: 30px;
+}
 .footer {
 	min-height: 100px;
 	background-color: #3a3a3a;
@@ -177,9 +183,19 @@ h2 {
 	font-size: 20px;
 	text-align: center;
 }
-#contact {
-	margin: 100px auto;
-	width: 50%;
+#contactRow {
+	margin-top: 50px;
+	padding: 30px;
+	/* max-width: 900px; */
+}
+#contactImg {
+	border-radius: 500px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#contactImg2 {
+	/* border-radius: 500px; */
+	box-shadow: 0 0 30px #f59707;
 }
 #message {
 	height: 100px;
@@ -212,7 +228,7 @@ p {
 
 #aboutimg {
 	border-radius: 500px;
-	margin: 50px 0;
+	margin: 10px 0;
 	text-align: center;
 	padding: 10px;
 }
@@ -221,6 +237,7 @@ p {
 	box-shadow: 0 0 30px #f59707;
 }
 #aboutrow {
+	margin-top: 50px;
 	padding: 30px;
 }
 #dinner {
@@ -228,6 +245,11 @@ p {
 }
 #ok {
 	width: 60%;
+	padding: 20px;
+}
+#asideprojekti {
+	text-align: center;
+	margin: 0 20px;
 }
 #asideprojekti1 {
 	margin: 80px 20px;
@@ -246,4 +268,28 @@ p {
 }
 video {
 	width: 100%;
+}
+
+#health{
+	/* width: 1000px; */
+}
+#react{
+	margin-top: 50px;
+}
+#todo{
+	max-height: 600px;
+}
+#link{
+	margin-top: 20px;
+	text-align: center;
+}
+.link{
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+}
+.link:hover{
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
 }
