@@ -46,11 +46,11 @@ h1{
 	font-size: 15px;
 	position: relative;
 	z-index: 10;
-	
+
 }
 
 .navbar-inverse .navbar-toggle:hover {
-	background-color: #f59707;	
+	background-color: #f59707;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -60,7 +60,7 @@ h1{
 	padding: 10px 20px;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-	/* background-color: #f59707; 
+	/* background-color: #f59707;
 	border-radius: 5px;
 	padding: 10px 20px; */
 }
@@ -89,7 +89,7 @@ h1{
 
 .dropdown-menu>li>a {
 	color: #fff;
-	text-align: center;	
+	text-align: center;
 	padding: 10px 0;
 }
 .dropdown-menu>li>a:hover {
@@ -105,7 +105,7 @@ h1{
 	padding: 0px;
 }
 #photo {
-	margin-top: 50px;	
+	margin-top: 50px;
 }
 
 #carousel-example-generic {
@@ -131,7 +131,7 @@ h1{
 }
 
 #rowthumb {
-	margin: 0px;	
+	margin: 0px;
 }
 #thumbnail1, #thumbnail2, #thumbnail3, #thumbnail4 {
 	height: 150px;
@@ -150,7 +150,7 @@ h1{
 	font-size: 40px;
 	padding-top: 30px;
 }
-#box1, #box2, #box3, #box4{ 
+#box1, #box2, #box3, #box4{
 	margin: 0px;
 	padding: 0px;
 	text-decoration: none;
@@ -173,6 +173,7 @@ h2 {
 }
 .portfoliop{
 	margin: 30px;
+	text-align: left
 }
 .footer {
 	min-height: 100px;
@@ -211,7 +212,7 @@ h2 {
 	color: #f59707;
 	margin-bottom: 40px;
 	font-size: 40px;
-	
+
 }
 .h3edu {
 	color: #000000;
@@ -245,7 +246,7 @@ p {
 }
 #ok {
 	width: 60%;
-	padding: 20px;
+	margin-bottom: 20px;
 }
 #asideprojekti {
 	text-align: center;
