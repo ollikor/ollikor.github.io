@@ -30,6 +30,7 @@
   ******************************/
 
   #stringCounterContent {
+    box-shadow: 0px 0px 10px black;
     text-align: left;
     overflow: auto;
     background-color: rgb(0, 114, 44);
@@ -65,15 +66,8 @@
     RM Counter styles
   ********************/
 
-  table, th, td {
-    font-size: 20px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-    border-color: orange;
-    background-color: white;
-  }
   .counterContent {
+    box-shadow: 0px 0px 10px black;
     background-color: rgb(0, 114, 44);
     padding: 20px;
     margin-bottom: 20px;
@@ -90,6 +84,14 @@
   #error {
     color: white;
   }
+  table, th, td {
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-color: orange;
+    background-color: white;
+  }
 
 
   /*******************
@@ -97,6 +99,7 @@
   *******************/
 
   .newYearTimer {
+    box-shadow: 0px 0px 10px black;
     background-color: rgb(0, 114, 44);
     padding: 20px;
   }
