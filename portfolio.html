@@ -12,6 +12,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/ownstyle.css" rel="stylesheet">
+	<link href="css/smallProgramStyle.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="getDays()">
 	<div class="page-header">
 		<div class="container">
 			<nav class="navbar navbar-inverse">
@@ -201,24 +202,105 @@
 			</div>
 		  </div>
 		  <div class="col-sm-12">
-			<div id="asideprojekti3">
-				<h2 id="templates">Templates</h2>
-				<p class="portfoliop">This is couple visualization assignments. first one is from visualization course. And
-				second is my part of our project.</p>
-				<div class="col-sm-6">
-					<img id="visual" class="img-responsive" src="pictures/visual.png" alt="visual"/><br>
+				<div id="asideprojekti3">
+					<h2 id="portfoliop">Templates</h2>
+					<p class="portfoliop">This is couple visualization assignments. first one is from visualization course. And
+					second is my part of our project.</p>
+					<div class="col-sm-6">
+						<img id="visual" class="img-responsive" src="pictures/visual.png" alt="visual"/><br>
+					</div>
+					<div class="col-sm-6">
+						<img id="projekti" class="img-responsive" src="pictures/projekti.jpg" alt="projekti"/>
+					</div>
+					<!--div class="col-xs-12 col-md-12">
+						<h2>My video and audio courses assignment</h2>
+						<video controls>
+							<source src="pictures/harjoitustyo.mp4" type="video/mp4">
+						</video>
+					</div-->
 				</div>
-				<div class="col-sm-6">
-					<img id="projekti" class="img-responsive" src="pictures/projekti.jpg" alt="projekti"/>
-				</div>
-				<!--div class="col-xs-12 col-md-12">
-					<h2>My video and audio courses assignment</h2>
-					<video controls>
-					  <source src="pictures/harjoitustyo.mp4" type="video/mp4">
-					</video>
-				</div-->
 			</div>
-		  </div>
+			<div class="col-sm-12">
+				<div id="asideprojekti4">
+					<h2 id="portfoliop">Small programs</h2>
+						<div class="col-sm-6">
+							<div id="stringCounterContent">
+								<div>
+									<h2 class="h2">1. String Item Counter</h2>
+									<input class="input" id="input" type="text" name="input" placeholder="Write something"></input>
+									<button class="button"  type="submit" onclick="search()"><i class="glyphicon glyphicon-search"></i></button><br>
+								</div>
+								<div class="inputText">
+									<span>Text: </span><span class="text" id="text"></span>
+								</div>
+								<div>
+									<div class="textDiv">
+										<span>Length of text</span><br>
+										<span class="value" id="length">0</span>
+									</div>
+									<div class="textDiv">
+										<span>Lower case from text</span><br>
+										<span class="value" id="lowercase">0</span>
+									</div>
+									<div class="textDiv">
+										<span>Upper case from text</span><br>
+										<span class="value" id="uppercase">0</span>
+									</div>
+									<div class="textDiv">
+										<span>Number from text</span><br>
+										<span class="value" id="number">0</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="counterContent">
+							<h2 class="h2">2. RM Counter</h2>
+							<p class="rmCounterInfo">RM counter is calculator to count max weight in gym.
+								Example if you know how many times you can lift 100kg penchpress,
+								then you can count how much is your one rep max.
+							</p>
+							<input class="input" id="setReps" type="text" placeholder="Set reps">
+							<input class="input" id="setWeight" type="text" placeholder="Set weight">
+							<button class="button" id="count" type="submit" onclick="GetValue()"><i class="glyphicon glyphicon-refresh"></i></button>
+							<p id="error"></p>
+							<div>
+								<h3  class="h2" id="rmValue"></h3>
+								<table id="rmResult">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+						<div id="asideprojekti4">
+								<div class="col-sm-12">
+									<div class="newYearTimer">
+											<h2 class="h2">3. New Year Timer</h2>
+											<div id="timerContent">
+												<div class="timerDiv">
+													<p class="text">Days</p>
+													<p class="value" id="days">0</p>
+												</div>
+												<div class="timerDiv">
+													<p class="text">Hours</p>
+													<p class="value" id="hours">0</p>
+												</div>
+												<div class="timerDiv">
+													<p class="text">Minutes</p>
+													<p class="value" id="minutes">0</p>
+												</div>
+												<div class="timerDiv">
+													<p class="text">Seconds</p>
+													<p class="value" id="seconds">0</p>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -230,6 +312,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/js.js"></script>
 	<script>
 	/*$(document).ready(function(){
 		$("#box1").mouseover(function(){
