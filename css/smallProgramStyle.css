@@ -38,7 +38,7 @@
     margin-bottom: 20px;
   }
   .inputText {
-    width: 85%;
+    width: 80%;
     margin-bottom: 20px;
     background-color: white;
     padding: 10px;
@@ -46,15 +46,19 @@
   }
   .textDiv {
     border-radius: 5px;
-    width: 200px;
+    width: 48%;
     text-align: center;
     font-size: 18px;
     float: left;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
     color: white;
-    padding: 5px;
-    margin-right: 10px;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
     margin-bottom: 10px;
+  }
+  .text {
+    font-size: 18px;
   }
   .value {
     font-size: 16px;
@@ -121,9 +125,11 @@
     margin-right: 1%;
     margin-bottom: 2%;
   }
-  .text {
+  .timerText {
     margin-bottom: 10px;
+    font-size: 20px;
   }
   .value {
     margin-bottom: 0px;
+    font-size: 18;
   }
