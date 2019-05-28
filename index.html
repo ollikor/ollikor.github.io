@@ -1,164 +1,693 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Olli Korhonen</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="icon" type="image/jpg" href="pictures/logo.png"/>
-    <!-- Bootstrap -->
-	
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/ownstyle.css" rel="stylesheet">
+<html>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-	<div class="page-header">
-		<div class="container">		
-			<nav class="navbar navbar-inverse">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-				  </button>
-				  <a class="navbar-brand" href="index.html">Olli <span id="star" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Korhonen</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-				  <ul class="nav navbar-nav">
-					<li class="active"><a href="index.html"><span id="home" class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-					<!--li class="dropdown">
-					  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">Work</a></li>
-						<li><a href="#">School</a></li>
-						<li><a href="#">Future</a></li>
-					  </ul>
-					</li-->
-					<li><a href="aboutme.html">About me</a></li>
-					<li><a href="educations.html">Educations</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="pictures.html">Pictures</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				  </ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-	
-	<div id="container" class="container">
-		<!--div id="photo" class="aside">
-			<img class="img-responsive" src="pictures/picture2.jpg"/>
-		</div-->
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gruppo|Orbitron&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+    /* font-family: 'Architects Daughter', cursive; */
+    font-family: 'Gruppo', cursive;
+  }
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-			<div class="item active">
-			  <img class="img-responsive" src="pictures/olli5.png" alt="olli"/>
-			  <div class="carousel-caption">
-				<h2>Hard working</h2>
-			  </div>
-			</div>
-			<div class="item">
-			  <img class="img-responsive" src="pictures/olli6.jpg" alt="olli"/>
-			  <div class="carousel-caption">
-				<h2>Relaxing</h2>
-			  </div>
-			</div>
-			<div class="item">
-			  <img class="img-responsive" src="pictures/olli.jpg" alt="olli"/>
-			  <div class="carousel-caption">
-				<h2>Fun</h2>
-			  </div>
-			</div>
-		  </div>
+  body {
+    margin: 0;
+    background-color: rgba(77, 77, 77);
+  }
 
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		  </a>
-		</div>
-		<div id="rowthumb" class="row">
-			<a href="aboutme.html" id="box1" class="col-sm-6 col-md-3">
-				<div id="thumbnail1" class="thumbnail">
-					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-					<div class="caption">
-						<h3>About me</h3>
-					</div>
-				</div>
-			</a>
-			<a href="educations.html" id="box2" class="col-sm-6 col-md-3">
-				<div id="thumbnail2" class="thumbnail">
-					<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-					<div class="caption">
-						<h3>Educations</h3>
-					</div>
-				</div>
-			</a>
-			<a href="portfolio.html" id="box3" class="col-sm-6 col-md-3">
-				<div id="thumbnail3" class="thumbnail">
-					<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
-					<div class="caption">
-						<h3>Portfolio</h3>
-					</div>
-				</div>
-			</a>
-			<a href="pictures.html" id="box4" class="col-sm-6 col-md-3">
-				<div id="thumbnail4" class="thumbnail">
-					<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-					<div class="caption">
-						<h3>Pictures</h3>
-					</div>
-				</div>
-			</a>	
-		</div>
-	</div>
-	<div class="footer">
-		© 2017 Olli korhonen 
-	</div>
-	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script>
-	/*$(document).ready(function(){
-		$("#box1").mouseover(function(){
-			$("#thumbnail1").css({
-				'background': '#7b7b7b',
-				'opacity': '0.5',
-				'font-size': '50px',
-			});	
-		});
-		$("#box1").mouseout(function(){
-			$("#thumbnail1").css({
-				'background': '#fff',
-				'opacity': '1.0',
-				'font-size': '40px',
-			});
-		});
-	});	*/
-	</script>
-  </body>
+  h1 {
+    /* color: blue; */
+    margin: 0;
+  }
+
+  p {
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 20px;
+  }
+
+  .githubLink {
+    color: white;
+  }
+
+  .githubLink:hover {
+    color: #337ab7;
+  }
+
+  .hideButton {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    background-color: rgb(210, 184, 134);
+    color: white;
+    font-size: 20px;
+  }
+
+  .hideButton:hover {
+    color: #337ab7;
+  }
+
+  #header {
+    position: relative;
+    margin: 0 0 20px 0;
+    text-align: center;
+    height: 100vh;
+    background-image: url("images/joki.JPG");
+    background-size: cover;
+  }
+
+  #imageContainer {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #image {
+    animation: color-me-in 10s infinite;
+    height: 40%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px white;
+    outline: none;
+  }
+
+  #headerInformation {
+    width: 100%;
+    color: white;
+    background-color: rgba(77, 77, 77, 0.5);
+    margin: 30px 0;
+    padding: 50px 0;
+  }
+
+  #headerInformationTitle {
+    margin: 0;
+  }
+
+  #portfolio {
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(77, 77, 77);
+    color: rgb(210, 184, 134);
+  }
+
+  #arrow {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: black;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 2px 5px white;
+    animation: arrow-down-up 2s infinite;
+    -webkit-transition: background-color 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 2s;
+    /* -webkit-transition: bottom 1s; /* For Safari 3.1 to 6.0 */
+    /* transition: bottom 1s;  */
+  }
+
+  #arrow:hover {
+    box-shadow: 0 2px 5px rgb(210, 184, 134);
+    color: rgb(210, 184, 134);
+    /* background-color: white; */
+    /* bottom: 25px; */
+  }
+
+  #portfolioContainer {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  #link {
+    width: 100%;
+    height: 100%;
+  }
+
+  #portfolioItem {
+    /* position: relative;
+    width: 50%;
+    padding-top: 50%; */
+    color: white;
+    background-color: rgba(77, 77, 77);
+    /* float: left; */
+    border: none;
+    outline: none;
+  }
+
+  #portfolioItem:hover {
+    color: rgb(210, 184, 134);
+    /* background-color: rgba(116, 116, 116); */
+  }
+
+  #PortfolioItemContent {
+    /* position: absolute;
+    height: 170px;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    text-align: center;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+
+  #webDevelopment,
+  #mobileDevelopment,
+  #graphicDesign,
+  #photography
+   {
+    max-width: 960px;
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    background-color: rgba(77, 77, 77);
+    color: rgb(210, 184, 134);
+  }
+
+  .portfolioP {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #experience {
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+  }
+
+  #logo {
+    font-size: 50px;
+  }
+
+  .grid-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    /* font-size: 30px; */
+    text-align: center;
+  }
+
+  .gridTitle {
+    text-align: left;
+  }
+
+  .gridText {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+  }
+
+  .portfolio-grid-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .portfolio-grid-item {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .listText {
+    text-align: left;
+  }
+
+  #imageGallery {
+    position: relative;
+    margin: 20px auto;
+    max-width: 960px;
+    box-shadow: 0 2px 10px white;
+    /* height: 400px; */
+  }
+
+  .graphicDesignImage {
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 10px white;
+  }
+
+  #imageGalleryImage {
+    width: 100%;
+  }
+
+  #backButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
+    margin: 0;
+    padding: 0 30px;
+    border: 0;
+    outline: none;
+    background-color: rgba(77, 77, 77, 0);
+    color: rgba(175, 175, 175, 0.5);
+    font-size: 30px;
+  }
+
+  #backButton:hover, #forwardButton:hover {
+    background-color: rgba(77, 77, 77, 0.3);
+  }
+
+  #forwardButton {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0 30px;
+    border: 0;
+    outline: none;
+    background-color: rgba(77, 77, 77, 0);
+    color: rgba(175, 175, 175, 0.5);
+    font-size: 30px;
+  }
+
+  #footer {
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: rgba(77, 77, 77);
+    text-align: center;
+    color: white;
+  }
+
+  @keyframes arrow-down-up {
+    0% {
+      bottom: 25px;
+    }
+
+    50% {
+      bottom: 10px;
+    }
+
+    100% {
+      bottom: 25px;
+    }
+  }
+
+  @keyframes color-me-in {
+    0% {
+      box-shadow: 0px 5px 15px rgb(210, 184, 134);
+    }
+
+    33% {
+      box-shadow: 0px 5px 15px rgb(132, 148, 165);
+    }
+
+    66% {
+      box-shadow: 0px 5px 15px rgb(91, 81, 26);
+    }
+
+    100% {
+      box-shadow: 0px 5px 15px rgb(210, 184, 134);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+  #portfolioItem {
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  #image {
+    width: 50%;
+  }
+
+  #arrow {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .grid-container, .portfolio-grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 0px;
+    /* font-size: 30px; */
+    text-align: left;
+  }
+
+  #imageGallery {
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape)
+and (min-device-width: 600px)
+and (max-device-width: 1200px) {
+  #image {
+    width: 20%;
+  }
+
+  #headerInformation {
+    width: 100%;
+    color: white;
+    background-color: rgba(77, 77, 77, 0.5);
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+
+  #arrow {
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+</style>
+
+<body onload="showImage()">
+  <header id="header">
+    <div id="imageContainer">
+      <img id="image" src="images/olli.PNG" alt="kuva">
+      <div id="headerInformation">
+        <h1 id="headerInformationTitle">Olli Korhonen</h1>
+        <h2 id="headerInformationTitle">Engineer</h2>
+      </div>
+    </div>
+    <a href="#portfolio"><i id="arrow" class="fas fa-long-arrow-alt-down"></i></a>
+  </header>
+  <!-- <div id="portfolioContainer"> -->
+  <h1 id="portfolio">Portfolio</h1>
+  <div class="portfolio-grid-container">
+    <div class="portfolio-grid-item">
+      <a href="#webDevelopment" onclick="showPortfolio(1)" id="portfolioItem">
+        <div id="PortfolioItemContent">
+          <h2>Web-development</h2>
+          <i id="logo" class="fab fa-react"></i>
+          <h3>React.js</h3>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-grid-item">
+      <a href="#mobileDevelopment" onclick="showPortfolio(2)" id="portfolioItem">
+        <div id="PortfolioItemContent">
+          <h2>Mobile-development</h2>
+          <i id="logo" class="fab fa-react"></i>
+          <h3>React Native</h3>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-grid-item">
+      <a href="#graphicDesign" onclick="showPortfolio(3)" id="portfolioItem">
+        <div id="PortfolioItemContent">
+          <h2>Graphic design</h2>
+          <i id="logo" class="fab fa-adobe"></i>
+          <h3>Adobe</h3>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-grid-item">
+      <a href="#photography" onclick="showPortfolio(4)" id="portfolioItem">
+        <div id="PortfolioItemContent">
+          <h2>Photography</h2>
+          <i id="logo" id="logo" class="fas fa-camera"></i>
+          <h3>Nikon D3100</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="webDevelopment">
+    <h1 >Web-development</h1>
+    <h2>React-Express-Mongo-App</h2>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/Health-app"><h3> Health app Github page</h3></a>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/api"><h3>Api Github page</h3></a>
+    <p class="portfolioP">
+      I have bathroom scales where I can get weight, fat percent and muscle percent
+      and I wanted create Health app where I can set my body composition from my bathroom scales.</br></br>
+      Layout have created using Bootstrap, data fetching from MongoDB via Express API. There is used Youtube API
+      for getting videos to page. On the youtube video page have used redux to save channel what is selected so
+      if user go to single video page and go back to youtube video page then application will fetch videos from same
+      channel what was earlier.
+    </p>
+    <img class="graphicDesignImage" src="images/home.PNG" alt="image">
+    <p class="portfolioP">
+        On the body composition page will display all body compositions and there is possible to set new body composition.
+        Body composition is possible also remove when you click some item on the graph.
+      </p>
+    <img class="graphicDesignImage" src="images/body.PNG" alt="image">
+    <p class="portfolioP">
+        On the food recipe page will display all recipes. There is possible to create new recipes and remove recipes.
+        when you click some recipe application will move to single recipe page where is more information from recipe.
+      </p>
+    <img class="graphicDesignImage" src="images/food.PNG" alt="image">
+    <img class="graphicDesignImage" src="images/recipe.PNG" alt="image">
+    <p class="portfolioP">
+        On the youtube videos page will display automatically videos from channel what is first channel on the database.
+        There is possible to save new channel using channel id. There is possible to set channel which will display
+        on the homepage. There is also possible to remove channel.
+        When you click some video item, application will move to single video page.
+      </p>
+    <img class="graphicDesignImage" src="images/videos.PNG" alt="image">
+    <img class="graphicDesignImage" src="images/video.PNG" alt="image">
+    <a href="#portfolio"><Button class="hideButton" onclick="hidePortfolio()">Hide</Button></a>
+  </div>
+  <div id="mobileDevelopment">
+    <h1>Mobile-development</h1>
+    <h2>Training diary application</h2>
+    <a class="githubLink" target="_blank" href="http://urn.fi/URN:NBN:fi:amk-201904296718"><h3>Bachelor's thesis</h3></a>
+    <p class="portfolioP">
+      This is my Training diary application what was my Bachelor's thesis subject. I have created this
+      using React Native and Redux.
+    </p>
+    <img class="graphicDesignImage" src="images/program.png" alt="image">
+    <img class="graphicDesignImage" src="images/createprogram.png" alt="image">
+    <img class="graphicDesignImage" src="images/training.png" alt="image">
+    <img class="graphicDesignImage" src="images/timer.png" alt="image">
+    <img class="graphicDesignImage" src="images/timersettings.png" alt="image">
+    <img class="graphicDesignImage" src="images/history.png" alt="image">
+    <h2>Todo App</h2>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/todoApp"><h3>Todo App</h3></a>
+    <p class="portfolioP">
+      This is my simple todo app what was my first own React Native project. There is possible to create and
+      remove todos. Todos will save to async storage.
+    </p>
+    <img class="graphicDesignImage" src="images/todoApp.png" alt="image">
+    <a href="#portfolio"><Button class="hideButton" onclick="hidePortfolio()">Hide</Button></a>
+  </div>
+  <div id="graphicDesign">
+    <h1>Graphic design</h1>
+    <h2>Graphic design assignment</h2>
+    <img class="graphicDesignImage" src="images/cover.png" alt="image">
+    <img class="graphicDesignImage" src="images/fishing.png" alt="image">
+    <img class="graphicDesignImage" src="images/frisbeegolfandphotography.png" alt="image">
+    <img class="graphicDesignImage" src="images/hiking.png" alt="image">
+    <img class="graphicDesignImage" src="images/backpages.png" alt="image">
+    <h2>3D-modeling</h2>
+    <p class="portfolioP">
+      I have made these using Blender.
+    </p>
+    <img class="graphicDesignImage" src="images/bathroom.png" alt="image">
+    <img class="graphicDesignImage" src="images/valmiskone.png" alt="image">
+    <img class="graphicDesignImage" src="images/sausagedinner.png" alt="image">
+    <img class="graphicDesignImage" src="images/penkki.png" alt="image">
+    <img class="graphicDesignImage" src="images/sormus.png" alt="image">
+    <a href="#portfolio"><Button class="hideButton" onclick="hidePortfolio()">Hide</Button></a>
+  </div>
+  <div id="photography">
+    <h1>Photography</h1>
+    <div id="imageGallery">
+      <button id="backButton" onclick="back()"><i class="fas fa-chevron-left"></i></button>
+      <button id="forwardButton" onclick="forward()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <a href="#portfolio"><Button class="hideButton" onclick="hidePortfolio()">Hide</Button></a>
+  </div>
+  <div id="experience">
+    <h1>Experience</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h2>Education</h2>
+        <h3>University of applied sciences 8/2015-4/2019</h3>
+        <p class="gridText">In august 2015 I started study in University of applied sciences in Jyväskylä.
+          My orientation was mediatecnique and now finally 2019 I am graduated and you can call me an engineer.</p>
+        <h3>Military service 7/2011-1/2012</h3>
+        <p class="gridText">In May 2011 I went at military in Kajaani.
+          My comppany was first jaeger comppany.
+          My military service took six month.</p>
+        <h3 class="gridTitle">Machine and metalwork education 2008-2011</h3>
+        <p class="gridText">2011 I complited this education in Viitasaari. My orientation was plater welder.</p>
+      </div>
+      <div class="grid-item">
+        <h2>Work</h2>
+        <h3>Iotas Oy 5/2018-11/2018</h3>
+        <p class="gridText">At Iotas Oy my job description was UX and software development trainee.
+          I made mobile application prototype with Xamarin.Forms.</p>
+        <h3>HP-Kasetti Oy 6/2013-8/2015</h3>
+        <p class="gridText">At HP-Kasetti I did building plater works. A metal roofs, metal moldings and rainspouts.</p>
+        <h3>KOME Oy 8/2o12-2/2013</h3>
+        <p class="gridText">At KOME I did little everything.
+          Welding, drilling, I drove by forklift, cleaning and little electrical work.</p>
+        <h3>Kiviteos Oy 2/2012-7/2012</h3>
+        <p class="gridText">At Kiviteos I did a yard stones.</p>
+      </div>
+      <div class="grid-item">
+        <h2>I have studied</h2>
+        <h3>Programming</h3>
+        <p class="gridText">
+          <ul class="listText">
+            <li>HTML + CSS</li>
+            <li>JavaScript</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>React-native</li>
+            <li>Xamarin.Forms</li>
+            <li>Moment.js</li>
+            <li>Chart.js</li>
+            <li>Highcharts.js</li>
+            <li>Mysql</li>
+            <li>MongoDB</li>
+            <li>Realm</li>
+            <li>Express</li>
+            <li>PHP</li>
+          </ul>
+        </p>
+        <h3>Other</h3>
+        <p class="gridText">
+          <ul class="listText">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Premiere</li>
+            <li>Office</li>
+            <li>Blender</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <p>© Olli Korhonen</p>
+    <p>olli.korhonen(at)gmail.com</p>
+    <p>0400 193 192</p>
+  </footer>
+  <script>
+    var index = 0;
+    var images = [
+      "images/joki2.jpg",
+      "images/koskisumu.jpg",
+      "images/myllysumu2.jpg",
+      "images/silta.jpg",
+      "images/lokki.jpg",
+      "images/sorsa.jpg",
+      "images/talo.jpg",
+      "images/vesi.jpg",
+      "images/heli.jpg",
+    ];
+
+    function showPortfolio(id) {
+      var w = document.getElementById("webDevelopment");
+      var m = document.getElementById("mobileDevelopment");
+      var g = document.getElementById("graphicDesign");
+      var p = document.getElementById("photography");
+      if (id === 1) {
+        w.style.display = "block";
+        m.style.display = "none";
+        g.style.display = "none";
+        p.style.display = "none";
+      }
+      if (id === 2) {
+        w.style.display = "none";
+        m.style.display = "block";
+        g.style.display = "none";
+        p.style.display = "none";
+      }
+      if (id === 3) {
+        w.style.display = "none";
+        m.style.display = "none";
+        g.style.display = "block";
+        p.style.display = "none";
+      }
+      if (id === 4) {
+        w.style.display = "none";
+        m.style.display = "none";
+        g.style.display = "none";
+        p.style.display = "block";
+      }
+    }
+
+    function hidePortfolio(id) {
+      var w = document.getElementById("webDevelopment");
+      var m = document.getElementById("mobileDevelopment");
+      var g = document.getElementById("graphicDesign");
+      var p = document.getElementById("photography");
+      w.style.display = "none";
+      m.style.display = "none";
+      g.style.display = "none";
+      p.style.display = "none";
+    }
+
+    function showImage() {
+      var node = document.createElement("IMG");
+      node.setAttribute("id", "imageGalleryImage" );
+      node.setAttribute("src", `${images[0]}`);
+      node.setAttribute("alt", "image");
+      console.log(node);
+      document.getElementById("imageGallery").appendChild(node);
+      // index = 1;
+    }
+
+    function forward() {
+      var length = images.length;
+      var image = document.getElementById("imageGalleryImage");
+      index += 1;
+      if(index + 1 > length) {
+        index = 0;
+        image.src = images[index];
+      }else{
+        image.src = images[index];
+      }
+    }
+
+    function back() {
+      var length = images.length;
+      var image = document.getElementById("imageGalleryImage");
+      index = index -1;
+      if(index < 0) {
+        index = length - 1;
+        image.src = images[index];
+      }else {
+        image.src = images[index];
+      }
+    }
+  </script>
+</body>
 </html>
