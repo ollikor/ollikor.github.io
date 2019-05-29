@@ -58,7 +58,6 @@ function showImage() {
   node.setAttribute("id", "imageGalleryImage" );
   node.setAttribute("src", `${images[0]}`);
   node.setAttribute("alt", "image");
-  console.log(node);
   document.getElementById("imageGallery").appendChild(node);
   // index = 1;
 }
