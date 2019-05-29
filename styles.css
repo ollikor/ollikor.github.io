@@ -59,11 +59,12 @@ ul {
 
 .video {
   position: absolute;
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 100%;
   height: 100%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 #header {
