@@ -1,14 +1,14 @@
 var index = 0;
 var images = [
-  "images/joki2.jpg",
-  "images/koskisumu.jpg",
-  "images/myllysumu2.jpg",
-  "images/silta.jpg",
-  "images/lokki.jpg",
-  "images/sorsa.jpg",
-  "images/talo.jpg",
-  "images/vesi.jpg",
-  "images/heli.jpg",
+  "images/joki22.jpg",
+  "images/koskisumu2.jpg",
+  "images/myllysumu22.jpg",
+  "images/silta2.jpg",
+  "images/lokki2.jpg",
+  "images/sorsa2.jpg",
+  "images/talo2.jpg",
+  "images/vesi2.jpg",
+  "images/heli2.jpg",
 ];
 
 function showPortfolio(id) {
