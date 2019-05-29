@@ -1,0 +1,353 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Gruppo', cursive;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(77, 77, 77);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.githubLink {
+  color: white;
+}
+
+.githubLink:hover {
+  color: #337ab7;
+}
+
+.hideButton {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 200px;
+  background-color: rgb(210, 184, 134);
+  color: white;
+  font-size: 20px;
+}
+
+.hideButton:hover {
+  color: #337ab7;
+}
+
+#header {
+  position: relative;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  height: 100vh;
+  background-image: url("images/joki.JPG");
+  background-size: cover;
+}
+
+#imageContainer {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#image {
+  animation: color-me-in 10s infinite;
+  height: 40%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px white;
+  outline: none;
+}
+
+#headerInformation {
+  /* width: 100%; */
+  color: white;
+  background-color: rgba(77, 77, 77, 0.5);
+  margin: 30px 0px;
+  padding: 50px 0px;
+}
+
+#headerInformationTitle {
+  margin: 0px;
+}
+
+#portfolio {
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(77, 77, 77);
+  color: rgb(210, 184, 134);
+}
+
+#arrow {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: black;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 25px;
+  color: white;
+  box-shadow: 0 2px 5px white;
+  animation: arrow-down-up 2s infinite;
+  -webkit-transition: background-color 2s;   /* For Safari 3.1 to 6.0 */
+  transition: background-color 2s;
+}
+
+#arrow:hover {
+  box-shadow: 0 2px 5px rgb(210, 184, 134);
+  color: rgb(210, 184, 134);
+}
+
+#portfolioContainer {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#link {
+  width: 100%;
+  height: 100%;
+}
+
+#portfolioItem {
+  color: white;
+  background-color: rgba(77, 77, 77);
+  border: none;
+  outline: none;
+}
+
+#portfolioItem:hover {
+  color: rgb(210, 184, 134);
+}
+
+#PortfolioItemContent {
+  text-align: center;
+}
+
+#webDevelopment,
+#mobileDevelopment,
+#graphicDesign,
+#photography
+ {
+  max-width: 960px;
+  display: none;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px 20px 40px 20px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(210, 184, 134);
+}
+
+.portfolioP {
+  text-align: left;
+  font-size: 20px;
+}
+
+#experience {
+  margin: 0px auto;
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+#logo {
+  font-size: 50px;
+}
+
+.grid-container {
+  max-width: 1170px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.gridTitle {
+  text-align: left;
+}
+
+.gridText {
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+.portfolio-grid-container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.portfolio-grid-item {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.listText {
+  text-align: left;
+}
+
+#imageGallery {
+  position: relative;
+  margin: 20px auto;
+  max-width: 960px;
+  box-shadow: 0px 2px 10px white;
+}
+
+.graphicDesignImage {
+  width: 100%;
+  margin: 20px 0px;
+  background-color: white;
+  box-shadow: 0px 2px 10px white;
+}
+
+#imageGalleryImage {
+  width: 100%;
+}
+
+#backButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  bottom: 0;
+  margin: 0;
+  padding: 0px 30px;
+  border: 0;
+  outline: none;
+  background-color: rgba(77, 77, 77, 0);
+  color: rgba(175, 175, 175, 0.5);
+  font-size: 30px;
+}
+
+#backButton:hover, #forwardButton:hover {
+  background-color: rgba(77, 77, 77, 0.3);
+}
+
+#forwardButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0px 30px;
+  border: 0;
+  outline: none;
+  background-color: rgba(77, 77, 77, 0);
+  color: rgba(175, 175, 175, 0.5);
+  font-size: 30px;
+}
+
+#footer {
+  padding: 30px;
+  font-size: 1.5em;
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  color: white;
+}
+
+@keyframes arrow-down-up {
+  0% {
+    bottom: 25px;
+  }
+
+  50% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: 25px;
+  }
+}
+
+@keyframes color-me-in {
+  0% {
+    box-shadow: 0px 5px 15px rgb(210, 184, 134);
+  }
+
+  33% {
+    box-shadow: 0px 5px 15px rgb(132, 148, 165);
+  }
+
+  66% {
+    box-shadow: 0px 5px 15px rgb(91, 81, 26);
+  }
+
+  100% {
+    box-shadow: 0px 5px 15px rgb(210, 184, 134);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+#portfolioItem {
+  width: 100%;
+  padding-top: 100%;
+}
+
+#image {
+  width: 50%;
+}
+
+#arrow {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.grid-container, .portfolio-grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.grid-item {
+  padding: 0px;
+  text-align: left;
+}
+
+#imageGallery {
+  width: 100%;
+}
+}
+
+@media only screen and (orientation: landscape)
+and (min-device-width: 600px)
+and (max-device-width: 1200px) {
+#image {
+  width: 20%;
+}
+
+#headerInformation {
+  width: 100%;
+  color: white;
+  background-color: rgba(77, 77, 77, 0.5);
+  margin: 10px 0;
+  padding: 20px 0;
+}
+
+#arrow {
+  width: 12px;
+  height: 12px;
+  padding: 10px;
+  font-size: 16px;
+}
+}
