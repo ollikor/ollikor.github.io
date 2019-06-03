@@ -360,6 +360,20 @@ ul {
 #imageGallery {
   width: 100%;
 }
+
+@keyframes arrow-down-up {
+  0% {
+    bottom: 90px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  100% {
+    bottom: 90px;
+  }
+}
 }
 
 @media only screen and (orientation: landscape)
@@ -382,5 +396,19 @@ and (max-device-width: 1200px) {
   height: 12px;
   padding: 10px;
   font-size: 16px;
+}
+
+@keyframes arrow-down-up {
+  0% {
+    bottom: 90px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  100% {
+    bottom: 90px;
+  }
 }
 }
