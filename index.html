@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Olli Korhonen</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="smallProgramStyle.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gruppo|Orbitron&display=swap" rel="stylesheet">
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gruppo|Orbitron&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta charset="UTF-8">
 </head>
+
 <body onload="showImage()">
   <header id="header">
     <div id="imageContainer">
@@ -61,10 +65,14 @@
     </div>
   </div>
   <div id="webDevelopment">
-    <h1 >Web-development</h1>
+    <h1>Web-development</h1>
     <h2>React-Express-Mongo-App</h2>
-    <a class="githubLink" target="_blank" href="https://github.com/ollikor/Health-app"><h3> Health app Github page</h3></a>
-    <a class="githubLink" target="_blank" href="https://github.com/ollikor/api"><h3>Api Github page</h3></a>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/Health-app">
+      <h3> Health app Github page</h3>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/api">
+      <h3>Api Github page</h3>
+    </a>
     <p class="portfolioP">
       I have bathroom scales where I can get weight, fat percent and muscle percent
       and I wanted create Health app, where I can set my body composition from my bathroom scales.</br></br>
@@ -75,33 +83,104 @@
     </p>
     <img class="graphicDesignImage" src="images/home.jpg" alt="image">
     <p class="portfolioP">
-        On the body composition page will display all body compositions and there is possible to set new body composition.
-        Body composition is possible also remove, when you click some item on the graph.
-      </p>
+      On the body composition page will display all body compositions and there is possible to set new body composition.
+      Body composition is possible also remove, when you click some item on the graph.
+    </p>
     <img class="graphicDesignImage" src="images/body.jpg" alt="image">
     <p class="portfolioP">
-        On the food recipe page will display all recipes. There is possible to create new recipes and remove recipes.
-        when you click some recipe application will move to single recipe page, where is more information of the recipe.
-      </p>
+      On the food recipe page will display all recipes. There is possible to create new recipes and remove recipes.
+      when you click some recipe application will move to single recipe page, where is more information of the recipe.
+    </p>
     <img class="graphicDesignImage" src="images/food.jpg" alt="image">
     <img class="graphicDesignImage" src="images/recipe.jpg" alt="image">
     <p class="portfolioP">
-        On the youtube videos page will display automatically videos from channel what is first channel on the database.
-        There is possible to save new channel using channel id. There is possible to set channel, which will display
-        on the homepage. There is also possible to remove channel.
-        When you click some video item, application will move to single video page.
-      </p>
+      On the youtube videos page will display automatically videos from channel what is first channel on the database.
+      There is possible to save new channel using channel id. There is possible to set channel, which will display
+      on the homepage. There is also possible to remove channel.
+      When you click some video item, application will move to single video page.
+    </p>
     <img class="graphicDesignImage" src="images/videos.jpg" alt="image">
     <img class="graphicDesignImage" src="images/video.jpg" alt="image">
     <div class="videoContainer">
-    <iframe class="video" src="https://www.youtube.com/embed/QJ420QeqY9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" src="https://www.youtube.com/embed/QJ420QeqY9E" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2>Small programs</h2>
+    <div>
+      <div id="stringCounterContent">
+        <div>
+          <h2 class="h2">1. String Item Counter</h2>
+          <input class="input" id="input" type="text" name="input" placeholder="Write something"></input>
+          <button class="button" type="submit" onclick="search()"><i class="fas fa-sync"></i></button><br>
+        </div>
+        <div class="inputText">
+          <span class="text">Text: </span><span class="text" id="text"></span>
+        </div>
+        <div>
+          <div class="textDiv">
+            <span>Length</span><br>
+            <span class="value" id="length">0</span>
+          </div>
+          <div class="textDiv">
+            <span>Lower case</span><br>
+            <span class="value" id="lowercase">0</span>
+          </div>
+          <div class="textDiv">
+            <span>Upper case</span><br>
+            <span class="value" id="uppercase">0</span>
+          </div>
+          <div class="textDiv">
+            <span>Number</span><br>
+            <span class="value" id="number">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counterContent">
+      <h2 class="h2">2. RM Counter</h2>
+      <p class="rmCounterInfo">RM counter is calculator to count max weight in gym.
+        Example if you know how many times you can lift 100kg bench press,
+        then you can count how much is your one rep max.
+      </p>
+      <input class="input" id="setReps" type="text" placeholder="Set reps">
+      <input class="input" id="setWeight" type="text" placeholder="Set weight">
+      <button class="button" id="count" type="submit" onclick="GetValue()"><i class="fas fa-sync"></i></button>
+      <p id="error"></p>
+      <div>
+        <h3 class="h2" id="rmValue"></h3>
+        <table id="rmResult">
+        </table>
+      </div>
+    </div>
+    <div class="newYearTimer">
+      <h2 class="h2">3. New Year Timer</h2>
+      <div id="timerContent">
+        <div class="timerDiv">
+          <p class="timerText">Days</p>
+          <p class="value" id="days">0</p>
+        </div>
+        <div class="timerDiv">
+          <p class="timerText">Hours</p>
+          <p class="value" id="hours">0</p>
+        </div>
+        <div class="timerDiv">
+          <p class="timerText">Minutes</p>
+          <p class="value" id="minutes">0</p>
+        </div>
+        <div class="timerDiv">
+          <p class="timerText">Seconds</p>
+          <p class="value" id="seconds">0</p>
+        </div>
+      </div>
     </div>
     <a href="#portfolio"><Button class="hideButton" onclick="hidePortfolio()">Hide</Button></a>
   </div>
   <div id="mobileDevelopment">
     <h1>Mobile-development</h1>
     <h2>Training diary application</h2>
-    <a class="githubLink" target="_blank" href="http://urn.fi/URN:NBN:fi:amk-201904296718"><h3>Bachelor's thesis</h3></a>
+    <a class="githubLink" target="_blank" href="http://urn.fi/URN:NBN:fi:amk-201904296718">
+      <h3>Bachelor's thesis</h3>
+    </a>
     <p class="portfolioP">
       This is my Training diary application which was my Bachelor's thesis subject. I have created this
       using React Native and Redux.
@@ -113,10 +192,13 @@
     <img class="graphicDesignImage" src="images/timersettings.png" alt="image">
     <img class="graphicDesignImage" src="images/history.png" alt="image">
     <div class="videoContainer">
-      <iframe class="video" src="https://www.youtube.com/embed/Faw3J8HOF7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" src="https://www.youtube.com/embed/Faw3J8HOF7g" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-      <h2>Todo App</h2>
-    <a class="githubLink" target="_blank" href="https://github.com/ollikor/todoApp"><h3>Todo App</h3></a>
+    <h2>Todo App</h2>
+    <a class="githubLink" target="_blank" href="https://github.com/ollikor/todoApp">
+      <h3>Todo App</h3>
+    </a>
     <p class="portfolioP">
       This is my simple todo app, what was my first own React Native project. There is possible to create and
       remove todos. Todos will save to async storage.
@@ -224,4 +306,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
