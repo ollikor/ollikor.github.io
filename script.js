@@ -198,6 +198,7 @@ var interval = false;
 
     var currentDay = new Date(Date.now());
     firstDayOfYear = new Date(Date.UTC(2020, 0, 1, -2, 0, 0));
+    // firstDayOfYear = new Date(Date.UTC(2019, 0, 6, -2, 0, 0));
     //firstDayOfYear = new Date(Date.UTC(2019, 4, 7, 15, 16, 0));
 
     // Days to milliseconds
@@ -241,7 +242,7 @@ var interval = false;
       ){
       clearInterval(update);
       var img = document.createElement("img");
-      img.setAttribute("src", "pictures/newyear.jpg");
+      img.setAttribute("src", "images/newyear.jpg");
       document.getElementById("timerContent").innerHTML = '';
       document.getElementById("timerContent").appendChild(img);
     }
