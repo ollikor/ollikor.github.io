@@ -197,7 +197,8 @@ var interval = false;
     var second = 1000;
 
     var currentDay = new Date(Date.now());
-    firstDayOfYear = new Date(Date.UTC(2020, 0, 1, -2, 0, 0));
+    var currentYear = currentDay.getFullYear() + 1;
+    firstDayOfYear = new Date(Date.UTC(currentYear, 0, 1, -2, 0, 0));
     // firstDayOfYear = new Date(Date.UTC(2019, 0, 6, -2, 0, 0));
     //firstDayOfYear = new Date(Date.UTC(2019, 4, 7, 15, 16, 0));
 
