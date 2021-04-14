@@ -99,7 +99,7 @@ main {
     object-fit: contain;
 }
 
-a {
+.card {
     text-decoration: none;
     color: rgb(53, 53, 53)
 }
@@ -180,6 +180,33 @@ p {
 
 .social-item {
     color: white;
+}
+
+.wordpress-content {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.project {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project h1 {
+    text-align: center;
+}
+
+.project-content {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.description {
+    text-align: left;
+}
+
+.link {
+    text-align: center;
 }
 
 @media screen and (max-width: 400px) {
