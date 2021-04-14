@@ -189,6 +189,7 @@ p {
 
 .project {
     margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
@@ -209,7 +210,14 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
     header {
         position: relative;
         width: 100%;
@@ -258,27 +266,19 @@ p {
         grid-template-columns: auto;
     }
 
-    .skills {
+    .javascript-content {
         grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .skills-content {
-        grid-template-columns: auto;
-    }
-
-    .aws-content, .api-content {
-        display: block;
+        grid-column-end: 5;
     }
 
     .aws {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 5;
     }
     
     .api {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 5;
     }
 
     footer {
@@ -304,27 +304,18 @@ p {
         grid-template-columns: auto;
     }
 
-    .skills {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .skills-content {
-        grid-template-columns: auto;
-    }
-
     .aws-content, .api-content {
         display: block;
     }
 
     .aws {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 5;
     }
     
     .api {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 5;
     }
   } 
 
