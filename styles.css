@@ -9,6 +9,15 @@ body {
     color: rgb(53, 53, 53);
 }
 
+a {
+    color: rgb(53, 53, 53);
+}
+
+a[href^=tel] {
+    text-decoration:inherit;
+    color: inherit;
+ }
+
 header {
     position: relative;
     width: 100%;
@@ -212,6 +221,7 @@ p {
 }
 
 .description {
+    background-color: red;
     text-align: left;
     color:rgb(53, 53, 53);
 }
@@ -220,13 +230,6 @@ p {
     text-align: center;
 }
 
-.back {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 20px;
-    color: rgb(53, 53, 53);
-}
 
 @media screen and (max-width: 600px) {
 
