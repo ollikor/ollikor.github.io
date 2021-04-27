@@ -95,7 +95,6 @@ main {
 .card-image {
     width: 100%;
     max-width: 500px;
-    /* height: 200px; */
     object-fit: contain;
 }
 
@@ -214,6 +213,7 @@ p {
 
 .description {
     text-align: left;
+    color:rgb(53, 53, 53);
 }
 
 .link {
@@ -225,7 +225,7 @@ p {
     left: 0;
     top: 0;
     margin: 20px;
-    color: rgb(59, 59, 59);
+    color: rgb(53, 53, 53);
 }
 
 @media screen and (max-width: 600px) {
