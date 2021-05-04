@@ -229,6 +229,13 @@ p {
     text-align: center;
 }
 
+.figcaption {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    padding-left: 20px;
+    text-align: left;
+}
 
 @media screen and (max-width: 600px) {
 
