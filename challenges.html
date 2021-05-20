@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,16 @@
     <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
     <title>Olli Korhonen</title>
 </head>
+
 <body>
     <div class="project">
         <h1>Challenges App</h1>
-        <video width="100%" max-width="500px" height="auto" controls>
-            <source src="images/challenges.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/qTFgKO_rz6E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
         <!-- <img class="card-image" src="images/large-challenges.jpg" alt="challenges">
         <figcaption class="figcaption">Challenges page</figcaption>
         <img class="card-image" src="images/large-sign.jpg" alt="sign">
@@ -30,12 +34,12 @@
         <div class="project-content">
             <p class="description">
                 Challenges app is create-react-app PWA-application. Backend of this application
-                have created using AWS-Amplify. Data storage is AWS DynamoDB and data will 
+                have created using AWS-Amplify. Data storage is AWS DynamoDB and data will
                 save using AWS AppSync GraphQl API.
                 Authentication have created with AWS Cognito pool.
             </p>
-            <p class="description">        
-                During this project I have learned how to use AWS console and how to 
+            <p class="description">
+                During this project I have learned how to use AWS console and how to
                 create and host AWS-Amplify project.
             </p>
             <p class="description">
@@ -46,4 +50,5 @@
         </div>
     </div>
 </body>
+
 </html>
