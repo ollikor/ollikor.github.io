@@ -1,3 +1,11 @@
+:root {
+    --primary: rgb(0, 106, 168);
+    --primary-text: rgb(53, 53, 53);
+    --secondary-text: rgb(255, 255, 255);
+    --primary-box-shadow: rgb(255, 255, 255);
+    --secondary-box-shadow: rgb(53, 53, 53);
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
 }
@@ -5,11 +13,11 @@ html {
 body {
     margin: 0 auto;
     max-width: 960px;
-    color: rgb(53, 53, 53);
+    color: var(--primary-text);
 }
 
 a {
-    color: rgb(53, 53, 53);
+    color: var(--primary-text);
 }
 
 a[href^=tel] {
@@ -18,6 +26,8 @@ a[href^=tel] {
  }
 
 header {
+    /* background-image: url("images/joki.jpg"); */
+    /* background-color: var(--primary); */
     position: relative;
     width: 100%;
     height: 300px;
@@ -35,7 +45,7 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px white;
+    box-shadow: 0px 2px 5px var(--primary-box-shadow);
     animation: color-me-in 10s infinite;
 }
 
@@ -46,7 +56,7 @@ header {
     height: 100px;
     margin: 0;
     border-radius: 50%;
-    background-color: rgb(53, 53, 53);
+    background-color: var(--primary);
 }
 
 .square {
@@ -55,7 +65,7 @@ header {
     width: 100%;
     height: 100px;
     margin: 0;
-    background-color: rgb(53, 53, 53);
+    background-color: var(--primary);
 }
 
 .header-text-group {
@@ -68,14 +78,14 @@ header {
 .header-title-1 {
     margin-bottom: 0;
     font-size: 22px;
-    color: white;
+    color: var(--secondary-text);
 }
 
 .header-title-2 {
     margin: 0;
     margin-bottom: 10px;
     font-size: 16px;
-    color: white;
+    color: var(--secondary-text);
 }
 
 main {
@@ -84,34 +94,42 @@ main {
 
 .main-title {
     text-align: center;
-    color: rgb(53, 53, 53);
+    color: var(--primary-text);
 }
 
 .grid {
     padding: 30px 0;
     display: grid;
-    grid-gap: 20px 20px;
-    grid-template-columns: auto auto ;
+    grid-gap: 30px;
+    grid-template-columns: auto;
 }
 
 .card {
-    text-align: center;
-    box-shadow: 0px 1px 2px black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 1px 2px var(--secondary-box-shadow);
     animation: fadeIn 5s;
+    text-decoration: none;
+    color: var(--primary-text);
+    border-radius: 20px 0 0 0;
 }
 
 .card-image {
     width: 100%;
+    height: 100%;
     max-width: 500px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 20px 0 20px 0;
 }
 
-.card {
-    text-decoration: none;
-    color: rgb(53, 53, 53)
+.card-information {
+    width: 40%;
+    padding: 5%;
 }
 
 .card-title {
+    margin-top: 0;
     font-size: 20px;
 }
 
@@ -131,8 +149,8 @@ main {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    color: white;
-    background-color: rgb(53, 53, 53);
+    color: var(--secondary-text);
+    background-color: var(--primary);
 }
 
 .skills-content {
@@ -167,7 +185,7 @@ i {
 }
 
 .work-item p {
-    color: rgb(53, 53, 53);
+    color: var(--primary-text);
 }
 
 footer {
@@ -176,15 +194,15 @@ footer {
     width: 100%;
     text-align: center;
     bottom: 0;
-    color: white;
+    color: var(--secondary-text);
     font-size: 1.2em;
-    background-color: rgb(53, 53, 53);
+    background-color: var(--primary);
 }
 
 p {
     margin: 20px 0;
     font-size: 18px;
-    color: white;
+    color: var(--secondary-text);
     text-decoration: none;
 }
 
@@ -196,26 +214,27 @@ p {
 }
 
 .social-item {
-    color: white;
+    color: var(--secondary-text);
 }
 
 .wordpress-content {
+    margin-top: 20px;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.project {
+/* .project {
     width: 100%;
     margin: 0 auto 50px;
     text-align: center;
-}
+} */
 
 .project h1 {
     margin: 0 0 50px 0;
     padding: 20px;
     text-align: center;
-    background-color: rgb(53, 53, 53);
-    color: white;
+    background-color: var(--primary-text);
+    color: var(--secondary-text);
 }
 
 .project-content {
@@ -225,7 +244,7 @@ p {
 
 .description {
     text-align: left;
-    color:rgb(53, 53, 53);
+    color: var(--primary-text);
 }
 
 .link {
@@ -263,7 +282,56 @@ p {
     height: 100%;
 }
 
+.documentation {
+    text-align: center;
+}
+
+.documentation header {
+    height: auto;
+    padding: 50px 0;
+    background-color: var(--primary-text);
+    color: var(--secondary-text);
+}
+
+.documentation article {
+    margin: 50px auto;
+    width: 500px;
+    text-align: left;
+}
+
+.documentation article h2 {
+    text-align: center;
+}
+
+.documentation article p {
+    color: var(--primary-text);
+}
+
+.back-link {
+    width: 960px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 600px) {
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-information {
+        width: 90%;
+    }
+
+    .card-title {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    
+    .card-title-2 {
+        font-size: 14px;
+    }
 
     .grid {
         padding-top: 30px;
@@ -302,7 +370,7 @@ p {
   }
 
   @media screen and (max-width: 800px) and (min-width: 400px) {
-    
+
     .grid {
         grid-template-columns: auto;
     }
@@ -334,19 +402,19 @@ p {
 
   @keyframes color-me-in {
     0% {
-      box-shadow: 0px 5px 15px rgb(210, 184, 134);
+      box-shadow: 0px 5px 15px rgb(255, 255, 255);
     }
   
     33% {
-      box-shadow: 0px 5px 15px rgb(132, 148, 165);
+      box-shadow: 0px 5px 15px rgb(136, 193, 255);
     }
   
     66% {
-      box-shadow: 0px 5px 15px rgb(91, 81, 26);
+      box-shadow: 0px 5px 15px rgb(0, 140, 255);
     }
   
     100% {
-      box-shadow: 0px 5px 15px rgb(210, 184, 134);
+      box-shadow: 0px 5px 15px rgb(255, 255, 255);
     }
   }
 

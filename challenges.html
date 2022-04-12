@@ -10,19 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Mina&display=swap" rel="stylesheet">
-    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
     <title>Olli Korhonen</title>
 </head>
 
 <body>
-    <div class="project">
-        <h1>Challenges App</h1>
+    <section class="documentation">
+        <!-- <h1>Challenges App</h1>
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/qTFgKO_rz6E"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        </div>
+        </div> -->
         <!-- <img class="card-image" src="images/large-challenges.jpg" alt="challenges">
         <figcaption class="figcaption">Challenges page</figcaption>
         <img class="card-image" src="images/large-sign.jpg" alt="sign">
@@ -31,7 +31,7 @@
         <figcaption class="figcaption">Menu</figcaption>
         <img class="card-image" src="images/large-changepwd.jpg" alt="changepwd">
         <figcaption class="figcaption">Change password page</figcaption> -->
-        <div class="project-content">
+        <!-- <div class="project-content">
             <p class="description">
                 Challenges app is create-react-app PWA-application. Backend of this application
                 have created using AWS-Amplify. Data storage is AWS DynamoDB and data will
@@ -47,8 +47,47 @@
                 Application counting how many days user have been successful with current challenge.
             </p>
             <p class="link"><a href="https://github.com/ollikor/Challenges" target="_blank">Visit Github-page</a></p>
-        </div>
-    </div>
+        </div> -->
+        <header>
+            <h1>Challenges application</h1>
+            <p>Created by Olli Korhonen</p>
+            <p>2021</p>
+        </header>
+        <nav class="back-link">
+            <a href="index.html">back to home</a>
+        </nav>
+        <article>
+            <h2>Introduction</h2>
+            <aside class="video-container">
+                <iframe src="https://www.youtube.com/embed/qTFgKO_rz6E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </aside>
+            <p> 
+                Challenges application have created to count how many days
+                user have been successful with challenge. Application requires to
+                sign in to application. Authentication is created with AWS-Amplify.
+
+            </p>
+        </article>
+        <article>
+            <h2>Structure</h2>
+            <img class="card-image" src="images/structure.PNG" alt="menu">
+            <figcaption class="figcaption">Application structure</figcaption>
+            <h3>Components</h3>
+        </article>
+        <article>
+            <h2>What I have learned?</h2>
+            <p>
+                During this project, I learned how to build a Progressive Web Application with AWS. 
+                Application is a PWA application created with React. 
+                An application was hosted using AWS-Amplify and Cognito user pool has been used for the authentication. 
+                All data were saved to DynamoDB via AWS-AppSync GraphQL API.
+            </p>
+        </article>
+
+    </section>
 </body>
 
 </html>

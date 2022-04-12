@@ -2,54 +2,74 @@
 <html lang="en">
 
 <head>
+    <title>Olli Korhonen - Web-developer - React.js, wordpress, AWS</title>
+    <meta name="description" content="Olli's portfolio, skills, educations and work.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”format-detection” content=”telephone=no”>
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
-    <title>Olli Korhonen</title>
+    <link href="fontawesome-free-6.1.1-web//css/all.css" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <figure>
-            <img src="images/small-profile.JPG" alt="img" class="img"></img>
+            <img src="images/small-profile.JPG" alt="img" class="img" />
         </figure>
         <figure class="oval"></figure>
         <figure class="square">
             <div class="header-text-group">
-                <h1 class="header-title-1">Olli Korhonen</h1>
-                <h2 class="header-title-2">Web-developer</h2>
+                <p class="header-title-1">Olli Korhonen</p>
+                <p class="header-title-2">Web-developer</p>
             </div>
         </figure>
     </header>
+
     <main>
+
         <h1 class="main-title">Portfolio</h1>
         <section class="grid">
-            <a href="challenges.html" class="card">
-                <img class="card-image" src="images/large-challenges.jpg">
-                <h1 class="card-title">Challenges App</h1>
-                <h2 class="card-title-2">React.js</h2>
-            </a>
+        <a href="challenges.html" class="card">
+            <aside>
+                <img class="card-image" src="images/large-lampo.jpg" alt="lampo">
+            </aside>
+            <aside class="card-information">
+                <h2 class="card-title">Pihtiputaan lämpötyö Oy</h2>
+                <h3 class="card-title-2">Wordpress - Theme development</h3>
+            </aside>
+        </a>
             <a href="blog.html" class="card">
-                <img class="card-image" src="images/large-blog.jpg">
-                <h1 class="card-title">Blog</h1>
-                <h2 class="card-title-2">Wordpress</h2>
+                <aside>
+                    <img class="card-image" src="images/large-blog.jpg" alt="blog">
+                </aside>
+                <aside class="card-information">
+                    <h2 class="card-title">Blog</h2>
+                    <h3 class="card-title-2">Wordpress - Theme development</h3>
+                </aside>
             </a>
             <a href="githubapp.html" class="card">
-                <img class="card-image" src="images/large-github.jpg">
-                <h1 class="card-title">Github App</h1>
-                <h2 class="card-title-2">React.js</h2>
+                <aside>
+                    <img class="card-image" src="images/large-github.jpg" alt="githubapp">
+                </aside>
+                <aside class="card-information">
+                    <h2 class="card-title">Github App</h2>
+                    <h3 class="card-title-2">React.js</h3>
+                </aside>
             </a>
             <a href="vr.html" class="card">
-                <img class="card-image" src="images/large-vr.jpg">
-                <h1 class="card-title">Vr App</h1>
-                <h2 class="card-title-2">React.js</h2>
+                <aside>
+                    <img class="card-image" src="images/large-vr.jpg" alt="vr">
+                </aside>
+                <aside class="card-information">
+                    <h2 class="card-title">Vr App</h2>
+                    <h3 class="card-title-2">React.js</h3>
+                </aside>
             </a>
             <!-- <a href="https://github.com/ollikor/Health-app" class="card">
                 <img class="card-image" src="images/health.PNG">
@@ -57,60 +77,62 @@
                 <h2 class="card-title-2">React.js</h2>
             </a> -->
         </section>
-        <!-- <h1 class="main-title">Experience</h1> -->
+
         <article class="skills">
             <h2>Skills</h2>
-            <article class="skills-content">
-                <article class="javascript-content">
+            <Aside class="skills-content">
+                <Aside class="wordpress-content">
+                    <i class="fab fa-wordpress"></i>
+                    <p>Wordpress</p>
+                </Aside>
+                <Aside class="javascript-content">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3"></i>
                     <i class="fab fa-js-square"></i>
                     <p>Html5 + Css</p>
                     <p>JavaScript</p>
                     <p>Bootstrap</p>
-                </article>
-                <article class="javascript-content">
+                </Aside>
+                <Aside class="javascript-content">
                     <i class="fab fa-react"></i>
                     <p>React.js</p>
                     <p>React-Native</p>
-                </article>
-                <article class="javascript-content">
+                </Aside>
+                <Aside class="javascript-content">
                     <i class="fas fa-chart-bar"></i>
                     <p>Chart.js</p>
                     <p>Highcharts.js</p>
-                </article>
-                <article class="javascript-content">
+                </Aside>
+                <Aside class="javascript-content">
                     <i class="fas fa-database"></i>
                     <!-- <p>DynamoDB</p> -->
                     <p>MongoDB</p>
                     <p>Mysql</p>
-                </article>
-                <article class="aws">
+                </Aside>
+                <Aside class="aws">
                     <i class="fab fa-aws"></i>
-                    <article class="aws-content">
+                    <Aside class="aws-content">
                         <p>Amplify</p>
                         <p>Cognito</p>
                         <p>AppSync</p>
                         <p>DynamoDB</p>
-                    </article>
-                </article>
-                <article class="api">
+                    </Aside>
+                </Aside>
+                <Aside class="api">
                     <i class="fas fa-cogs"></i>
-                    <article class="api-content">
+                    <Aside class="api-content">
                         <p>Express</p>
-                    </article>
-                </article>
-                <article class="wordpress-content">
-                    <i class="fab fa-wordpress"></i>
-                    <p>Wordpress</p>
-                </article>
-            </article>
+                    </Aside>
+                </Aside>
+            </Aside>
         </article>
+
         <section class="experience">
             <article>
                 <h2>Work</h2>
                 <article class="work-item">
-                    <h3>HP-Kasetti 6/2013-12/2020</h3>
+                    <h3>HP-Kasetti 6/2013-</h3>
+                    <h4>5/2021-</h4>
                     <h4>5/2020-12/2020</h4>
                     <h4>6/2019-2/2020</h4>
                     <h4>6/2013-8/2015</h4>
@@ -147,7 +169,7 @@
                 </article>
             </article>
             <article>
-                <h2>Education</h2>
+                <h2>Educations</h2>
 
                 <article class="work-item">
                     <h3>University of applied sciences 8/2015-4/2019</h3>
@@ -173,23 +195,26 @@
                     </h3>
                     <p>
                         2011 I complited this education in Viitasaari.
-                        My orientation was plater welder.
+                        My orientation was welder.
                     </p>
                 </article>
             </article>
         </section>
+
     </main>
+
     <footer>
-        <p>© Olli Korhonen 2021</p>
+        <p>© Olli Korhonen 2022</p>
         <p>olli.korhonen19(at)gmail.com</p>
         <p>0400 193 192</p>
+
         <section class="social">
-            <a href="https://www.linkedin.com/in/olli-korhonen-99850015a/" class="social-item"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="mailto:olli.korhonen19@gmail.com" class="social-item"><i class="fas fa-at"></i></a>
-            <a href="https://github.com/ollikor" class="social-item"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/olli-korhonen-99850015a/" class="social-item" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ollikor" class="social-item" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/olli_korhonen92/" class="social-item" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </section>
     </footer>
+
 </body>
 
 </html>
