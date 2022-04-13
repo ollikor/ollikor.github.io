@@ -2299,7 +2299,7 @@ punctuation-symbols:
     - question
     - quote-left
     - quote-right
-    - section
+    - div
   label: Punctuation + Symbols
 religion:
   icons:

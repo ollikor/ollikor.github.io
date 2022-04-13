@@ -21360,10 +21360,10 @@ searchengin:
     - brands
   unicode: f3eb
   voted: false
-section:
+div:
   changes:
     - 6.0.0-beta1
-  label: Section
+  label: div
   search:
     terms: []
   styles:
