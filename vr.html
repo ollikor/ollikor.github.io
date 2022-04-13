@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Olli Korhonen - Challenges application, React.js</title>
+    <meta name="description" content="Challenges application created by Olli Korhonen.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Mina&display=swap" rel="stylesheet">
-    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
-    <title>Olli Korhonen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="fontawesome-free-6.1.1-web//css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="project">
-        <h1 >VR App</h1>
-        <img class="card-image"  src="images/large-vr.jpg">
-        <div class="project-content">
+    <section class="documentation">
+        <!-- <h1>Challenges App</h1>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/qTFgKO_rz6E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div> -->
+        <!-- <img class="card-image" src="images/large-challenges.jpg" alt="challenges">
+        <figcaption class="figcaption">Challenges page</figcaption>
+        <img class="card-image" src="images/large-sign.jpg" alt="sign">
+        <figcaption class="figcaption">SignIn page</figcaption>
+        <img class="card-image" src="images/large-menu.jpg" alt="menu">
+        <figcaption class="figcaption">Menu</figcaption>
+        <img class="card-image" src="images/large-changepwd.jpg" alt="changepwd">
+        <figcaption class="figcaption">Change password page</figcaption> -->
+        <!-- <div class="project-content">
             <p class="description">
-                VR-app is small react application for searching incoming and outcoming trains at selected station.
+                Challenges app is create-react-app PWA-application. Backend of this application
+                have created using AWS-Amplify. Data storage is AWS DynamoDB and data will
+                save using AWS AppSync GraphQl API.
+                Authentication have created with AWS Cognito pool.
             </p>
-            <p class="link"><a href="https://ollikor.github.io/VR-app" target="_blank">Try App</a></p>
-            <p class="link"><a href=https://github.com/ollikor/VR-app target="_blank">Visit Github-page</a></p>
-        </div>
-    </div>
+            <p class="description">
+                During this project I have learned how to use AWS console and how to
+                create and host AWS-Amplify project.
+            </p>
+            <p class="description">
+                User can create account and after that is possible to create a new challenges.
+                Application counting how many days user have been successful with current challenge.
+            </p>
+            <p class="link"><a href="https://github.com/ollikor/Challenges" target="_blank">Visit Github-page</a></p>
+        </div> -->
+        <header>
+            <h1>VR application</h1>
+            <p>React.js</p>
+            <p>2020</p>
+            <div class="header-text-group">
+                <p class="header-title-1">Olli Korhonen</p>
+                <p class="header-title-2">Web-developer</p>
+            </div>
+        </header>
+        <nav class="back-link">
+            <a href="index.html">back to home</a>
+        </nav>
+        <article>
+            <h2>Introduction</h2>
+            <aside class="video-container">
+                <iframe src="https://www.youtube.com/embed/qTFgKO_rz6E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </aside>
+            <p> 
+                Challenges application have created to count how many days
+                user have been successful with challenge. Application requires to
+                sign in to application. Authentication is created with AWS-Amplify.
+
+            </p>
+        </article>
+        <article>
+            <h2>Structure</h2>
+            <img class="card-image" src="images/structure.PNG" alt="menu">
+            <figcaption class="figcaption">Application structure</figcaption>
+            <h3>Components</h3>
+        </article>
+        <article>
+            <h2>What I have learned?</h2>
+            <p>
+                During this project, I learned how to build a Progressive Web Application with AWS. 
+                Application is a PWA application created with React. 
+                An application was hosted using AWS-Amplify and Cognito user pool has been used for the authentication. 
+                All data were saved to DynamoDB via AWS-AppSync GraphQL API.
+            </p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>© Olli Korhonen 2022</p>
+        <a class="email" href="mailto:olli.korhonen19@gmail.com">olli.korhonen19(at)gmail.com</a>
+        <p>0400 193 192</p>
+
+        <section class="social">
+            <a href="https://www.linkedin.com/in/olli-korhonen-99850015a/" class="social-item" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ollikor" class="social-item" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/olli_korhonen92/" class="social-item" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </section>
+    </footer>
+
 </body>
+
 </html>

@@ -4,10 +4,12 @@
     --secondary-text: rgb(255, 255, 255);
     --primary-box-shadow: rgb(255, 255, 255);
     --secondary-box-shadow: rgb(53, 53, 53);
+    --primary-font-family: 'Montserrat', sans-serif;
+    --secondary-font-family: 'Kalam', cursive;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font-family);
 }
 
 body {
@@ -26,12 +28,10 @@ a[href^=tel] {
  }
 
 header {
-    /* background-image: url("images/joki.jpg"); */
-    /* background-color: var(--primary); */
     position: relative;
     width: 100%;
     height: 300px;
-    font-family: 'Kalam', cursive;
+    font-family: var(--primary-font-family);
 }
 
 .img {
@@ -69,14 +69,16 @@ header {
 }
 
 .header-text-group {
+    font-family: var(--secondary-font-family);
     position: absolute;
     right: 0;
     bottom: 0;
     margin-right: 3vw;
+    text-align: left;
 }
 
 .header-title-1 {
-    margin-bottom: 0;
+    margin: 0;
     font-size: 22px;
     color: var(--secondary-text);
 }
@@ -108,11 +110,11 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 1px 2px var(--secondary-box-shadow);
     animation: fadeIn 5s;
     text-decoration: none;
     color: var(--primary-text);
-    border-radius: 20px 0 0 0;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0px 1px 2px var(--secondary-box-shadow);
 }
 
 .card-image {
@@ -121,11 +123,12 @@ main {
     max-width: 500px;
     object-fit: cover;
     border-radius: 20px 0 20px 0;
+    box-shadow: 0.5px 0.5px 2px var(--secondary-box-shadow);
 }
 
 .card-information {
     width: 40%;
-    padding: 5%;
+    padding: 2% 5%;
 }
 
 .card-title {
@@ -133,8 +136,21 @@ main {
     font-size: 20px;
 }
 
-.card-title-2 {
+.card-text-group {
+    margin: 8px 0;
+}
+
+.card-text-title {
     font-size: 18px;
+    font-weight: bolder;
+    color: var(--primary-text);
+    line-height: 1.4;
+}
+
+.card-text {
+    font-size: 18px;
+    color: var(--primary-text);
+    line-height: 1.4;
 }
 
 .experience {
@@ -151,6 +167,10 @@ main {
     text-align: center;
     color: var(--secondary-text);
     background-color: var(--primary);
+}
+
+.skills h2 {
+    margin-bottom: 50px;
 }
 
 .skills-content {
@@ -174,11 +194,17 @@ i {
     grid-column-end: 5;
 }
 
+.wordpress-content {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
 .aws-content, .api-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 .work-item {
     margin: 40px 0;
@@ -204,6 +230,11 @@ p {
     font-size: 18px;
     color: var(--secondary-text);
     text-decoration: none;
+    line-height: 1.4;
+}
+
+.email {
+    color: var(--secondary-text);
 }
 
 .social {
@@ -216,18 +247,6 @@ p {
 .social-item {
     color: var(--secondary-text);
 }
-
-.wordpress-content {
-    margin-top: 20px;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-/* .project {
-    width: 100%;
-    margin: 0 auto 50px;
-    text-align: center;
-} */
 
 .project h1 {
     margin: 0 0 50px 0;
@@ -287,19 +306,24 @@ p {
 }
 
 .documentation header {
-    height: auto;
-    padding: 50px 0;
-    background-color: var(--primary-text);
+    height: 170px;
+    padding: 30px 0;
+    background-color: var(--primary);
     color: var(--secondary-text);
+}
+
+.documentation header h1, p {
+    margin: 10px 20px;
 }
 
 .documentation article {
     margin: 50px auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     text-align: left;
 }
 
-.documentation article h2 {
+.documentation h2, h3 {
     text-align: center;
 }
 
@@ -307,9 +331,15 @@ p {
     color: var(--primary-text);
 }
 
+.documentation-image {
+    width: 100%;
+    max-width: 500px;
+}
+
 .back-link {
-    width: 960px;
-    margin-top: 20px;
+    width: 90%;
+    max-width: 960px;
+    margin: 5%;
     text-align: left;
     font-size: 20px;
 }
@@ -325,12 +355,16 @@ p {
     }
 
     .card-title {
-        margin-top: 0;
-        font-size: 16px;
+        margin-top: 10px;
+        font-size: 18px;
     }
     
-    .card-title-2 {
-        font-size: 14px;
+    .card-text-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 16px;
     }
 
     .grid {
