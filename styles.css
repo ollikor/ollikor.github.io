@@ -81,20 +81,22 @@ a[href^=tel] {
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-right: 3vw;
+    margin-right: 10px;
     text-align: left;
 }
 
 .header-name {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.375em;
+    line-height: 1em;
     color: var(--secondary-text);
 }
 
 .header-description {
     margin: 0;
-    margin-bottom: 5px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    line-height: 1em;
     color: var(--secondary-text);
 }
 
@@ -272,9 +274,13 @@ i {
 .back-link {
     width: 100%;
     max-width: 960px;
-    margin: 20px 0;
+    margin: 20px 0 0;
     text-align: left;
     font-size: 18px;
+}
+
+.introduction-content, .structure-content, .learned-content {
+    padding: 0 0 20px;
 }
 
 .figcaption {
@@ -314,8 +320,14 @@ i {
     max-width: 500px;
 }
 
-.documentation h2, .documentation h3 {
+.documentation h2 {
     text-align: center;
+    font-size: 20px;
+}
+
+.documentation h3 {
+    text-align: center;
+    font-size: 18px;
 }
 
 .documentation-image {
