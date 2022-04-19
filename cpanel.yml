@@ -2,11 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ollikorh/public_html/
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp blog.html $DEPLOYPATH
-    - /bin/cp challenges.html $DEPLOYPATH
-    - /bin/cp githubapp.html $DEPLOYPATH
-    - /bin/cp lampotyo.html $DEPLOYPATH
-    - /bin/cp vr.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R webpage $DEPLOYPATH
