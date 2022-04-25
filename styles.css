@@ -4,6 +4,7 @@
     --secondary-text: rgb(255, 255, 255);
     --primary-box-shadow: rgb(255, 255, 255);
     --secondary-box-shadow: rgb(53, 53, 53);
+    --footer-border: rgb(255, 238, 0);
     --primary-font-family: 'Montserrat', sans-serif;
     --secondary-font-family: 'Kalam', cursive;
 }
@@ -332,10 +333,12 @@ i {
 
 .documentation-image {
     width: 100%;
-    max-width: 500px;
 }
 
-
+.documentation a {
+    margin: 10px 0;
+    display: block;
+}
 
 
 
@@ -347,6 +350,7 @@ footer {
     max-width: 960px;
     padding: 10px 0;
     text-align: center;
+    border-bottom: 5px solid var(--footer-border);
     color: var(--secondary-text);
     background-color: var(--primary);
 }
